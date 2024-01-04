@@ -1,6 +1,6 @@
 ---
 const pageTitle = "About Me";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import PagesLayout from "../layouts/PagesLayout.astro";
 
 const identity = {
   firstName: "Sarah",
@@ -19,7 +19,7 @@ const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<PagesLayout pageTitle={pageTitle}>
   <h2>... and my new Astro site!</h2>
 
   <p>
@@ -62,4 +62,4 @@ const textCase = "uppercase";
       <p>My goal is not 3 days.</p>
     )
   }
-</BaseLayout>
+</PagesLayout>
