@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import "../styles/stylesheet.scss";
 const { pageTitle } = Astro.props;
 ---
@@ -9,21 +10,19 @@ const { pageTitle } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Nunito"
+    <GoogleFontsOptimizer
+      url="https://fonts.googleapis.com/css?family=Nunito"
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body>
-    <Header />
-    <h1>{pageTitle}</h1>
-    <slot />
-    <Footer />
-    <script>
-      import "../scripts/menu.js";
-    </script>
-  </body>
-</html>
+</html><body>
+  <Header />
+  <h1>{pageTitle}</h1>
+  <slot />
+  <Footer />
+  <script>
+    import "../scripts/menu.js";
+  </script>
+</body>
