@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import TitleBanner from "../components/TitleBanner.astro";
 const { pageTitle } = Astro.props;
 ---
 
 <div class="container">
+  <TitleBanner />
   <BaseLayout pageTitle={pageTitle}>
     <slot />
   </BaseLayout>
