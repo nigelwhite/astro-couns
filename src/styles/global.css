@@ -1,7 +1,14 @@
-html {
-    background-color: #f1f5f9;
-    font-family: sans-serif;
+:root {
+    --background: #1e90ff;
+    --accent: green;
   }
+  
+  body { background-color: var(--background); }
+
+/* html {
+    background-color: green;
+    font-family: sans-serif;
+  } */
   
   body {
     margin: 0 auto;
