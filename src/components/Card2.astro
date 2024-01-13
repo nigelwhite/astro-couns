@@ -1,11 +1,13 @@
 ---
 const { cardTitle, cardText, cardImage } = Astro.props;
+import CustomButton from "../components/CustomButton.astro";
 ---
 
 <div class="card">
   <h2>{cardTitle}</h2>
   <img class="card-image" src={cardImage} alt="" />
   <p>{cardText}</p>
+  <CustomButton />
 </div>
 
 <style>
