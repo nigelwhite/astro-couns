@@ -9,10 +9,6 @@ import Header from "../components/Header.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito"
-    />
 
     <title>Astro</title>
   </head>
@@ -25,4 +21,14 @@ import Header from "../components/Header.astro";
   </body>
 </html>
 
-<style></style>
+<style>
+  body {
+    font-family: Nunito, sans-serif;
+    background-color: var(--background);
+    margin: 0 auto;
+    /* width: 100%; */
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+</style>

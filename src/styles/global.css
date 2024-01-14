@@ -3,17 +3,6 @@
     --accent: #ff9776;
     --colour1: #A6CF98;
     --colour2: #557C55;
-
-  }
-
-  body {
-    /* font-family: Nunito, sans-serif; */
-    background-color: var(--background);
-    margin: 0 auto;
-    /* width: 100%; */
-    max-width: 80ch;
-    padding: 1rem;
-    line-height: 1.5;
   }
 
   * {
