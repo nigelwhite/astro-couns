@@ -1,38 +1,98 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Card2 from "../components/Card2.astro";
+import Card from "../components/Card.astro";
 const pageTitle = "Home";
 ---
 
 <BaseLayout>
   <h1>{pageTitle}</h1>
-  <div class="card-row">
-    <Card2
+  <section class="articles">
+    <Card
       cardTitle="Counselling"
       cardText="Talk it out"
       cardImage="https://picsum.photos/id/1005/800/450"
-      alt=""
+      cardImagealt=""
       buttonText="about Counselling"
       buttonUrl="counselling"
     />
-    <Card2
+    <Card
       cardTitle="Supervision"
       cardText="Clinical and straight"
       cardImage="https://picsum.photos/id/103/800/450"
+      cardImagealt=""
       buttonText="about Supervision"
       buttonUrl="supervision"
     />
-  </div>
-  <p>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-  </p>
+  </section>
 </BaseLayout>
+<p>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+</p>
 
 <style>
-  .card-row {
-    display: flex;
-    max-width: 60ch;
-    margin: 0 auto;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* body {
+    margin: 0;
+    padding: 48px 0;
+    font-family: "Figtree", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    background-image: linear-gradient(45deg, #7c9885, #b5b682);
+    min-height: 100vh;
+  } */
+
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+
+  @media screen and (max-width: 960px) {
+    article {
+      container: card/inline-size;
+    }
+    .article-body p {
+      display: none;
+    }
+  }
+
+  @container card (min-width: 380px) {
+    .article-wrapper {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 16px;
+    }
+    .article-body {
+      padding-left: 0;
+    }
+    figure {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    figure img {
+      height: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
   }
 </style>
