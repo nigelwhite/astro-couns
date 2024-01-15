@@ -1,9 +1,11 @@
 :root {
     --background: #F2FFE9;
-    --accent: #ff9776;
-    --colour1: #A6CF98;
-    --colour2: #557C55;
-    --font-accent: "Bebas Neue", cursive;
+    --color-accent: #ff9776;
+    --color1: #A6CF98;
+    --color-title: #395339;
+    --color-all: grey;
+   
+    --font-title: Genos, sans-serif;
     --font-all: Nunito, sans-serif;
   }
 
@@ -13,6 +15,7 @@
 
   h1 {
     margin: 1rem 0;
-    font-size: 2.5rem;
-    color: var(--colour2);
+    font-size: 2.2rem;
+    color: var(--color-title);
+    font-family: var(--font-title);
   }
