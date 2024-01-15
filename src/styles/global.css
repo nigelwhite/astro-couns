@@ -3,6 +3,8 @@
     --accent: #ff9776;
     --colour1: #A6CF98;
     --colour2: #557C55;
+    --font-accent: "Bebas Neue", cursive;
+    --font-all: Nunito, sans-serif;
   }
 
   * {
