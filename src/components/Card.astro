@@ -31,7 +31,7 @@ const { cardTitle, cardText, cardImage, cardImagealt, buttonText, buttonUrl } =
   </div>
 </article>
 
-<style scoped>
+<style>
   article {
     --img-scale: 1.001;
     --title-color: black;
@@ -44,6 +44,7 @@ const { cardTitle, cardText, cardImage, cardImagealt, buttonText, buttonUrl } =
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
+    max-width: 400px;
   }
 
   article a::after {
