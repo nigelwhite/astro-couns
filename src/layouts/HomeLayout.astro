@@ -1,11 +1,14 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout />
-<div class="homepage">
-  <slot />
-</div>
+<Hero />
+<BaseLayout>
+  <div class="homepage">
+    <slot />
+  </div>
+</BaseLayout>
 
 <style>
   body {

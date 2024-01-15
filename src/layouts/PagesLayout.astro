@@ -4,14 +4,15 @@ import TitleBanner from "../components/TitleBanner.astro";
 ---
 
 <TitleBanner />
-<BaseLayout />
-<div class="pages">
-  <slot />
-</div>
+<BaseLayout>
+  <div class="pages">
+    <slot />
+  </div>
+</BaseLayout>
 
 <style>
   body {
-    max-width: 80ch;
+    max-width: 110ch;
   }
   .pages {
     background-color: pink;
