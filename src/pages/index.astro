@@ -1,12 +1,12 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import HomeLayout from "../layouts/HomeLayout.astro";
 import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
 const pageTitle = "Home";
 ---
 
-<BaseLayout>
-  <Hero />
+<Hero />
+<HomeLayout class="homepage">
   <section class="articles">
     <Card
       cardTitle="Counselling"
@@ -25,11 +25,12 @@ const pageTitle = "Home";
       buttonUrl="supervision"
     />
   </section>
-</BaseLayout>
-<p>
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-</p>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+  </p>
+</HomeLayout>
 
 <style>
   *,
@@ -37,16 +38,6 @@ const pageTitle = "Home";
   *::after {
     box-sizing: border-box;
   }
-
-  /* body {
-    margin: 0;
-    padding: 48px 0;
-    font-family: "Figtree", sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    background-image: linear-gradient(45deg, #7c9885, #b5b682);
-    min-height: 100vh;
-  } */
 
   .articles {
     display: grid;

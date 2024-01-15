@@ -29,3 +29,7 @@
     color: var(--color-title);
     font-family: var(--font-title);
   }
+
+  .homepage .title-banner {
+    display: none;
+  }
