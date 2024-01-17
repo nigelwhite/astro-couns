@@ -31,50 +31,12 @@ const pageTitle = "Home";
 </HomeLayout>
 
 <style>
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
   .articles {
-    display: flex;
-    justify-content: space-around;
-    /* display: grid;
+    display: grid;
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 24px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px; */
-  }
-
-  @media screen and (max-width: 960px) {
-    article {
-      container: card/inline-size;
-    }
-    .article-body p {
-      display: none;
-    }
-  }
-
-  @container card (min-width: 380px) {
-    .article-wrapper {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      gap: 16px;
-    }
-    .article-body {
-      padding-left: 0;
-    }
-    figure {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    figure img {
-      height: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
-    }
+    gap: 24px;
   }
 </style>
