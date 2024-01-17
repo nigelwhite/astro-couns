@@ -6,24 +6,10 @@ import TitleBanner from "../components/TitleBanner.astro";
 
 <TitleBanner />
 <BaseLayout>
-  <Hero class="hero-section" />
   <div class="homepage">
+    <Hero />
     <slot />
   </div>
 </BaseLayout>
 
-<style>
-  body {
-    max-width: 110ch;
-  }
-
-  .hero-section {
-    display: none;
-  }
-
-  @media screen and (min-width: 636px) {
-    .title-banner {
-      display: none;
-    }
-  }
-</style>
+<style></style>
