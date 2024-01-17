@@ -7,7 +7,10 @@
    
     --font-title: Genos, sans-serif;
     --font-all: Nunito, sans-serif;
+
   }
+
+  /* @media screen and (min-width: 636px) {} */
 
   * {
     box-sizing: border-box;

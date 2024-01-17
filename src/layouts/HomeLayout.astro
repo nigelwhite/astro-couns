@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Hero from "../components/Hero.astro";
+import TitleBanner from "../components/TitleBanner.astro";
 ---
 
-<Hero />
+<TitleBanner />
 <BaseLayout>
+  <Hero class="hero-section" />
   <div class="homepage">
     <slot />
   </div>
@@ -16,5 +18,14 @@ import Hero from "../components/Hero.astro";
   }
   .homepage {
     background-color: green;
+  }
+  .hero-section {
+    display: none;
+  }
+
+  @media screen and (min-width: 636px) {
+    .title-banner {
+      display: none;
+    }
   }
 </style>
