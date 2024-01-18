@@ -32,15 +32,16 @@ const pageTitle = "Home";
 
 <style>
   .articles {
-    /* display: flex;
-    justify-content: space-around; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    display: grid;
-    justify-content: center;
-    max-width: 1200px;
-    margin-inline: auto;
-    padding-inline: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
+  @media screen and (min-width: 915px) {
+    .articles {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 </style>
