@@ -1,6 +1,5 @@
 ---
-const { cardTitle, cardText, cardImage, cardImagealt, buttonText, buttonUrl } =
-  Astro.props;
+const { cardTitle, cardText, cardImage, cardImagealt, cardUrl } = Astro.props;
 ---
 
 <article>
@@ -13,7 +12,7 @@ const { cardTitle, cardText, cardImage, cardImagealt, buttonText, buttonUrl } =
       <p>
         {cardText}
       </p>
-      <a href={buttonUrl} class="read-more">
+      <a href={cardUrl} class="read-more">
         Read more <span class="sr-only">about this is some title</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -1,12 +1,11 @@
 ---
-const { cardTitle, cardText, cardImage, buttonText, buttonUrl, experience } =
-  Astro.props;
+const { cardTitle, cardText, cardImage, cardUrl, experience } = Astro.props;
 ---
 
 <div class="card-grid-space">
   <a
     class="card"
-    href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
+    href={cardUrl}
     style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')"
   >
     <div>
