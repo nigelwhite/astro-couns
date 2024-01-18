@@ -31,25 +31,33 @@ const pageTitle = "Home";
   </p>
 
   <section class="articles">
-    <Card2 />
-    <Card2 />
+    <Card2
+      cardTitle="Counselling"
+      cardText="Talk it out"
+      experience="10 years experience"
+    />
+    <Card2
+      cardTitle="Supervision"
+      cardText="Talk it out"
+      experience="5 years experience"
+    />
+
+    <style>
+      .articles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color2);
+        padding: 3rem 0;
+      }
+
+      @media screen and (min-width: 915px) {
+        .articles {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+    </style>
   </section>
 </HomeLayout>
-
-<style>
-  .articles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color2);
-    padding: 3rem 0;
-  }
-
-  @media screen and (min-width: 915px) {
-    .articles {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }
-</style>
