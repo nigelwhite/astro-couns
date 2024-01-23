@@ -1,0 +1,18 @@
+---
+layout: "../../layouts/PagesLayout.astro"
+---
+
+We can't choose the thoughts that pop into our heads or the feelings that arise in our hearts. But we can choose how we receive them.
+We are reacting to our thoughts and feelings all the time. We react with thoughts, feelings and body states to the original, spontaneous thoughts and feelings. This is self talk.
+You may notice patterns in your self talk, both in what you 'say' to yourself and in the tone of voice you use.
+Self talk is trying its best to be helpful, but often its methods haven't been revised for years. A lot of it will be driven by habit. If we aren't careful we can fall into habits that have become unhelpful.
+
+An example - Try harder
+We may have been brought up in a culture where 'Try harder' is a continual companion to our efforts. Everything we do, we feel is not quite good enough. We focus on our shortcomings in an effort to correct them. This approach has many benefits and we can be grateful for those. However, using it all the time is going to deplete us, especially when we reach middle age.
+
+If we respond to most of what goes on inside us with aversion, dissaproval, what effect does that have on us after years?
+
+After years of unhelpful self talk, you may get fed up of it. This is a great time to try a new approach.
+
+Something to try
+Make up a simple phrase of kindness like, "May I be at peace" or "I am a good person". Say it slowly to yourself, over and over. Can you take the time to be kind to yourself? As you say it explore the range of tones of voice that are available to you. How kind can your tone of voice become?
