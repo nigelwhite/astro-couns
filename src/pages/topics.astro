@@ -5,7 +5,7 @@ const allPosts = await Astro.glob("../pages/topics/*.mdx");
 ---
 
 <PagesLayout pageTitle={pageTitle}>
-  <p>This is where I will post about my journey learning Astro.</p>
+  <p>Background on various topics with experiments to try</p>
   <ul>
     {
       allPosts.map((post) => (
