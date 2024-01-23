@@ -1,10 +1,11 @@
 ---
-import PagesLayout from "../layouts/PagesLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Topics";
 const allPosts = await Astro.glob("../pages/topics/*.mdx");
 ---
 
-<PagesLayout pageTitle={pageTitle}>
+<BaseLayout>
+  <h2>{pageTitle}</h2>
   <p>Background on various topics with experiments to try</p>
   <ul>
     {
@@ -15,4 +16,4 @@ const allPosts = await Astro.glob("../pages/topics/*.mdx");
       ))
     }
   </ul>
-</PagesLayout>
+</BaseLayout>

@@ -1,9 +1,10 @@
 ---
-import PagesLayout from "../layouts/PagesLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About";
 ---
 
-<PagesLayout pageTitle={pageTitle}>
+<BaseLayout>
+  <h2>{pageTitle}</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
     ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
@@ -67,4 +68,4 @@ const pageTitle = "About";
     sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue
     velit cursus nunc,
   </p>
-</PagesLayout>
+</BaseLayout>

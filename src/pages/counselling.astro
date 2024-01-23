@@ -1,9 +1,10 @@
 ---
-import PagesLayout from "../layouts/PagesLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Counselling";
 ---
 
-<PagesLayout pageTitle={pageTitle}>
+<BaseLayout>
+  <h2>{pageTitle}</h2>
   <p>
     In counselling sessions no one talks about their lives the way you talk
     about yours. Everyone's counselling is different. You may find it hard or
@@ -93,4 +94,4 @@ const pageTitle = "Counselling";
     find new perspectives and guide you as you discover your own way forward.
     Counselling is a process: a joint exploration by you and the counsellor.
   </p>
-</PagesLayout>
+</BaseLayout>
