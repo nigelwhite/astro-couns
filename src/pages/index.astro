@@ -1,92 +1,99 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
+import Hero from "../components/Hero.astro";
 const pageTitle = "Home";
 ---
 
-<BaseLayout class="homepage">
-  <p>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-  </p>
+<BaseLayout>
+  <div class="homepage">
+    <Hero />
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+      dis
+    </p>
 
-  <section class="articles">
-    <Card
-      cardTitle="Counselling"
-      cardText="Talk it out"
-      cardImage="https://picsum.photos/id/1005/350/196"
-      cardImagealt=""
-      buttonText="about Counselling"
-      cardUrl="counselling"
-      style="wide"
-    />
-    <Card
-      cardTitle="Supervision"
-      cardText="Clinical and straight"
-      cardImage="https://picsum.photos/id/103/350/196"
-      cardImagealt=""
-      buttonText="about Supervision"
-      cardUrl="supervision"
-      style="wide"
-    />
-  </section>
+    <section class="articles">
+      <Card
+        cardTitle="Counselling"
+        cardText="Talk it out"
+        cardImage="https://picsum.photos/id/1005/350/196"
+        cardImagealt=""
+        buttonText="about Counselling"
+        cardUrl="counselling"
+        style="wide"
+      />
+      <Card
+        cardTitle="Supervision"
+        cardText="Clinical and straight"
+        cardImage="https://picsum.photos/id/103/350/196"
+        cardImagealt=""
+        buttonText="about Supervision"
+        cardUrl="supervision"
+        style="wide"
+      />
+    </section>
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-  </p>
-  <section class="articles">
-    <Card
-      cardTitle="Experience"
-      cardText="Talk it out"
-      cardImage="https://picsum.photos/id/1005/275/154"
-      cardImagealt=""
-      buttonText="about Counselling"
-      cardUrl="cexperience"
-      style="narrow"
-    />
-    <Card
-      cardTitle="Training"
-      cardText="Clinical and straight"
-      cardImage="https://picsum.photos/id/103/275/154"
-      cardImagealt=""
-      buttonText="about Supervision"
-      cardUrl="training"
-      style="narrow"
-    />
-    <Card
-      cardTitle="Topics"
-      cardText="Clinical and straight"
-      cardImage="https://picsum.photos/id/103/275/154"
-      cardImagealt=""
-      buttonText="about Supervision"
-      cardUrl="topics"
-      style="narrow"
-    />
-  </section>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+      dis
+    </p>
+    <section class="articles">
+      <Card
+        cardTitle="Experience"
+        cardText="Talk it out"
+        cardImage="https://picsum.photos/id/1005/275/154"
+        cardImagealt=""
+        buttonText="about Counselling"
+        cardUrl="cexperience"
+        style="narrow"
+      />
+      <Card
+        cardTitle="Training"
+        cardText="Clinical and straight"
+        cardImage="https://picsum.photos/id/103/275/154"
+        cardImagealt=""
+        buttonText="about Supervision"
+        cardUrl="training"
+        style="narrow"
+      />
+      <Card
+        cardTitle="Topics"
+        cardText="Clinical and straight"
+        cardImage="https://picsum.photos/id/103/275/154"
+        cardImagealt=""
+        buttonText="about Supervision"
+        cardUrl="topics"
+        style="narrow"
+      />
+    </section>
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-  </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+      dis
+    </p>
 
-  <section class="articles"></section>
+    <section class="articles"></section>
+  </div>
+</BaseLayout>
 
-  <style>
+<style>
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color2);
+    padding: 3rem 0;
+  }
+
+  @media screen and (min-width: 915px) {
     .articles {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: var(--color2);
-      padding: 3rem 0;
+      flex-direction: row;
+      justify-content: space-around;
     }
-
-    @media screen and (min-width: 915px) {
-      .articles {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-    }
-  </style>
-</BaseLayout>
+  }
+</style>
