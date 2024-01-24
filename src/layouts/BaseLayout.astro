@@ -19,11 +19,9 @@ const pagePathname = Astro.url.pathname;
   <body>
     <div class="container">
       <Header />
-      <p>{pagePathname}</p>
-      {pagePathname === "/" ? `<p>nobanner</p>` : `<TitleBanner />`}
+      {pagePathname === "/" ? <p class="no-banner">&nbsp;</p> : <TitleBanner />}
 
       <div class="main">
-        <h1>{pageTitle}</h1>
         <slot />
       </div>
       <Footer />
@@ -52,5 +50,9 @@ const pagePathname = Astro.url.pathname;
 
   .main {
     flex: 1;
+  }
+
+  .no-banner {
+    display: none;
   }
 </style>

@@ -1,28 +1,12 @@
 ---
 import Navigation from "./Navigation.astro";
 import Hamburger from "./Hamburger.astro";
-
-const number = 7;
-const showPlural = number > 1;
-const showBanner = true;
 ---
 
 <header>
   <nav>
     <Hamburger />
     <Navigation />
-
-    <h1>The current URL is: {Astro.url.pathname}</h1>
-
-    <div>
-      <p>
-        {
-          showPlural
-            ? `This map requires ${number} players`
-            : "This map is single player"
-        }
-      </p>
-    </div>
   </nav>
 </header>
 
