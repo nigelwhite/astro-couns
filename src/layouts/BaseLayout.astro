@@ -2,10 +2,9 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-// import TitleBanner from "../components/TitleBanner.astro";
 import TopBanner from "../components/TopBanner.astro";
-const { pageTitle } = Astro.props;
 const pagePathname = Astro.url.pathname;
+const { isRoute } = Astro.props;
 ---
 
 <html lang="en">
@@ -18,10 +17,9 @@ const pagePathname = Astro.url.pathname;
     <title>Nigel White Counselling</title>
   </head>
   <body>
-    <div class="container">
+    <div class:list={["container", { "container-wide": pagePathname === "/" }]}>
       {pagePathname === "/" ? <p class="no-banner">&nbsp;</p> : <TopBanner />}
       <Header />
-      <!-- {pagePathname === "/" ? <p class="no-banner">&nbsp;</p> : <TitleBanner />} -->
 
       <div class="main">
         <slot />
@@ -48,6 +46,10 @@ const pagePathname = Astro.url.pathname;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+  }
+
+  .container-wide {
+    max-width: 110ch;
   }
 
   .main {
