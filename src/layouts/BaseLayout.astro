@@ -4,7 +4,6 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import TopBanner from "../components/TopBanner.astro";
 const pagePathname = Astro.url.pathname;
-const { isRoute } = Astro.props;
 ---
 
 <html lang="en">
@@ -60,3 +59,6 @@ const { isRoute } = Astro.props;
     display: none;
   }
 </style>
+
+<!-- class:list has a ternary to add a wide class for the homepage only. https://docs.astro.build/en/guides/styling/#combining-classes-with-classlist
+TopBanner displays on a ternary to hide if we're on the homepage. https://docs.astro.build/en/guides/migrate-to-astro/from-gatsby/#guided-example-gatsby-layout-to-astro -->
