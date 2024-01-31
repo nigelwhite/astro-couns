@@ -1,9 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Picture } from "astro-imagetools/components";
 const pageTitle = "Counselling";
 ---
 
 <BaseLayout>
+  <Picture
+    src="/src/images/desert-rocks/neom-Xm1wdkNUwrY-unsplash.jpg"
+    alt="A person looking at a desert landscape"
+  />
   <h2>{pageTitle}</h2>
   <p>{new Date().getFullYear()}</p>
   <p>
