@@ -1,3 +1,5 @@
+npm run dev
+
 Static Site Generation
 Astro's default build (also called rendering mode) is output: 'static'.
 Since all rendering happens at build time, a full-site rebuild is required when I update anything.
